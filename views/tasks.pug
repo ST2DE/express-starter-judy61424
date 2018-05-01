@@ -1,0 +1,14 @@
+extexn ./index
+
+black contents
+  h2 所有資料
+  form{action'/task/add' methdo='post'}
+      h2 todo list:
+      input{placholder="input something"}
+      button{type="type="submit"}送出
+      
+  each todo task of tasks
+  li
+    a{href='/task/ * task.id} a{task.title}
+    
+    

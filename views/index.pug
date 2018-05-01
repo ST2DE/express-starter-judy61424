@@ -1,0 +1,16 @@
+const taskController = require('../controllers/taskController.js');
+
+module.exports = function (app) {
+
+  app.get('/tasks', taskController.index);
+  app.get('/api/tasks', taskController.indexApi);
+
+};
+
+<h2>所有資料</h2>
+
+<ul>
+    <% tasks.forEach(function(task) { %>
+        <li><a href='/task/<%= task.id %>'><%= task.id %>: <%= task.title %></a></li>
+    <% }); %>
+</ul>
