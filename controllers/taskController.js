@@ -14,5 +14,12 @@ let taskController = {
         res.json(tasks);
       });
   },
+  create: function(req, res) {
+    const title = req.body.title;
+    Task .Create({title: title})
+      .then(functuin(tasks) {
+        res.json(tasks):
+      });
+  },   
 };
 module.exports = taskController;
