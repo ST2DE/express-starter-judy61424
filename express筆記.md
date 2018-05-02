@@ -4,7 +4,7 @@
 <li>2.是屬於輕量級的網站架構</li>
 <li>*輕量light weight:只有最基礎的 http 功能，沒有像是「登入權限」/「資料庫規劃」等等完整的功能</li>
 <li>3.將原本寫再一起的程式分成「邏輯運算」 & 「畫面」兩段</li>
-            邏輯運算 => controller
+    *邏輯運算 => controller
     畫面 => view、routes的處理
 <li>=>讓大家在協作時html看起來畫面乾淨，並可以讓顯示曾做到最簡單的表述</li>
 <li>4.只有做view、 Route</li>
